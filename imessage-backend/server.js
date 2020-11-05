@@ -13,9 +13,9 @@ const app = express()
 const port = process.env.PORT || 9000
 
 const pusher = new Pusher({
-    appId: '1094842',
-    key: 'e85f4e96f3bf1542818c',
-    secret: '144eb05dcdef365641c7',
+    appId: '',
+    key: '',
+    secret: '',
     cluster: 'us3',
     encrypted: true
   });
@@ -27,7 +27,6 @@ app.use(express.json())
 
 // db config
 
-const mongoURI = 'mongodb+srv://admin:fdpmkfibaFAszaLP@cluster0.hfdkv.mongodb.net/imessagedb?retryWrites=true&w=majority'
 
 mongoose.connect(mongoURI, {
     useCreateIndex: true,
